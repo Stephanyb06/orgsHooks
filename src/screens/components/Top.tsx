@@ -23,10 +23,10 @@ class Top extends React.Component {
 
     render() {
         return <View style={styles.top}>
-        <Image source={logo} style={styles.image} />
-        <Text style={styles.welcome}>{this.state.top.welcome}</Text>
-        <Text style={styles.caption}>{this.state.top.caption}</Text>
-    </View>
+            <Image source={logo} style={styles.image} />
+            <Text style={styles.welcome}>{this.state.top.welcome}</Text>
+            <Text style={styles.caption}>{this.state.top.caption}</Text>
+        </View>
     }
 }
 
@@ -44,11 +44,13 @@ const styles = StyleSheet.create({
         fontSize: 26,
         lineHeight: 42,
         fontWeight: 'bold',
+        color: '#464646',
     },
     caption: {
         fontSize: 16,
         lineHeight: 26,
-    }
+        color: '#A3A3A3',
+    },
 });
 
 export default Top;
