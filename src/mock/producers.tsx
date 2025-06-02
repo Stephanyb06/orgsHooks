@@ -5,7 +5,7 @@ import potater from "../assets/produtores/potager.png";
 import salad from "../assets/produtores/salad.png";
 
 const randomResult = (min: number, max: number) => {
-    return Math.random() * (max - min + 1) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 const producers ={
